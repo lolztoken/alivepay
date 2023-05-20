@@ -112,7 +112,7 @@ def add_new_files():
 
 def add_csv_to_database(csv_file, database_file):
     print("File added: " + csv_file)
-    path = file_to_read = "./pay/" + csv_file
+    file_to_read = "./pay/" + csv_file
     #print(file_to_read)
     # Open the CSV file and read the items
     with open(file_to_read, 'r') as file:
