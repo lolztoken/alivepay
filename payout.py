@@ -368,9 +368,9 @@ if __name__ == "__main__":
         balance = float(get_balance(name, token))
         if sum_of_payments > balance:
             issues = issues + 1
-            print(token + ": Sum of Payments = " + str(sum_of_payments)+ ", ballance = " + str(balance) + ". Add " + str(sum_of_payments - balance) + " " + token + " to continue.")
+            print(token + ": Sum of Payments = " + str(sum_of_payments)+ ", balance = " + str(balance) + ". Add " + str(sum_of_payments - balance) + " " + token + " to continue.")
         else:
-            print(token + ": Sum of Payments = " + str(sum_of_payments) + ", ballance = " + str(balance) + ". Ready to payout.")
+            print(token + ": Sum of Payments = " + str(sum_of_payments) + ", balance = " + str(balance) + ". Ready to payout.")
 
 # if any balances are too low, exit script.
     if issues > 0:
