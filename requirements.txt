@@ -1,0 +1,3 @@
+beem==0.24.26
+hiveengine
+pandas
