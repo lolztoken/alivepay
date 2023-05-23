@@ -204,7 +204,7 @@ def get_sum_for_token(db_file, token):
     c.execute("""
         SELECT SUM(amount)
         FROM transactions
-        WHERE token = ?
+        WHERE token = ? AND time_paid IS NULL
         GROUP BY token
     """, (token,))
 
